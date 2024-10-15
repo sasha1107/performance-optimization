@@ -6,19 +6,26 @@ export default function Page() {
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
         <picture>
           <source
-            srcSet={"/assets/earth_2x.webp"}
-            type="image/webp"
+            srcSet={
+              "https://github.com/sasha1107/performance-optimization/blob/main/public/assets/earth_2x.png?raw=true"
+            }
+            type="image/png"
             media="(-webkit-device-pixel-ratio: 2)"
           />
-          <source srcSet={"/assets/earth.webp"} type="image/webp" />
+          <source
+            srcSet={
+              "https://github.com/sasha1107/performance-optimization/blob/main/public/assets/earth.png?raw=true"
+            }
+            type="image/png"
+          />
           <img
             className="w-[400px] h-[400px]"
-            src="/assets/earth.webp"
+            src="https://github.com/sasha1107/performance-optimization/blob/main/public/assets/earth.png?raw=true"
             alt="earth"
           />
         </picture>
         <p className="text-center w-full">
-          Local Image with html <code>{`<picture/>`}</code> tag
+          Remote Image with html <code>{`<picture/>`}</code> tag
         </p>
       </main>
       <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
